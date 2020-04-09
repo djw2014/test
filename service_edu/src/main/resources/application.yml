@@ -18,7 +18,7 @@ spring:
 logging:
   config: classpath:logback.xml
   level:
-    io.swagger.models.parameters.AbstractSerializableParameter: error #swagger2.9.2版本实体类注解@ApiModelProperty为int类型时导致
+    io.swagger.models.parameters.AbstractSerializableParameter: error #swagger2.9.2版本实体类注解@ApiModelProperty为int类型时导致控制台打印错误，不影响使用
 #配置控制台打印sql及其结果
 mybatis-plus:
   configuration:
