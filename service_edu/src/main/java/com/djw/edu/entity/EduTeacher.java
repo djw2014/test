@@ -1,6 +1,5 @@
 package com.djw.edu.entity;
 
-import com.alibaba.fastjson.annotation.JSONField;
 import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -58,12 +57,10 @@ public class EduTeacher implements Serializable {
 
     @ApiModelProperty(value = "创建时间")
     @TableField(value = "create_date", fill = FieldFill.INSERT)
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date createDate;
 
     @ApiModelProperty(value = "修改时间")
     @TableField(value = "update_date", fill = FieldFill.INSERT_UPDATE)
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date updateDate;
 
 

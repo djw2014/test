@@ -5,11 +5,6 @@ spring:
     name: service_edu
   profiles:
     active: dev
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mybatisplus?serverTimezone=UTC&characterEncoding=utf8
-    username: root
-    password: 123456
   #返回数据统一时间格式
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -19,7 +14,6 @@ logging:
   config: classpath:logback.xml
   level:
     io.swagger.models.parameters.AbstractSerializableParameter: error #swagger2.9.2版本实体类注解@ApiModelProperty为int类型时导致控制台打印错误，不影响使用
-#配置控制台打印sql及其结果
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#文件地址
+file:
+  path: F:/upload

@@ -3,6 +3,7 @@ package com.djw.bean;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * @Author djw
@@ -11,6 +12,7 @@ import lombok.Data;
  */
 @Data
 @ApiModel(value="接口返回对象", description="接口返回对象")
+@Accessors(chain = true)
 public class Result<T> {
     /**
      * 成功标志

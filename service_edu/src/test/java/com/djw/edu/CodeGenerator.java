@@ -21,9 +21,9 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir("E:\\guli\\service_edu" + "/src/main/java");
+        gc.setOutputDir("F:\\guli\\service_edu" + "/src/main/java");
         gc.setAuthor("djw"); //作者
-        gc.setOpen(false); //是否打开文件
+        gc.setOpen(true); //是否打开文件
         gc.setServiceName("%sService"); //去掉service接口的首字母I
         gc.setSwagger2(true); //实体属性 Swagger2 注解
         gc.setFileOverride(true); //是否覆盖相同文件
@@ -63,7 +63,7 @@ public class CodeGenerator {
         strategy.setEntityLombokModel(true); //lombok模型，@Accessors(chain = true) setter链式操作
         strategy.setRestControllerStyle(true); //restful api风格控制器
         strategy.setEntityTableFieldAnnotationEnable(true); //生成的字段映射原表字段
-        strategy.setInclude("edu_teacher"); //将要生成的表名
+        strategy.setInclude("sys_file"); //将要生成的表名
         strategy.setControllerMappingHyphenStyle(true); //url中驼峰转连字符
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
         mpg.setStrategy(strategy);
