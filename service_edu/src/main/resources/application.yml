@@ -9,6 +9,9 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
 #日志配置
 logging:
   config: classpath:logback.xml
@@ -16,4 +19,4 @@ logging:
     io.swagger.models.parameters.AbstractSerializableParameter: error #swagger2.9.2版本实体类注解@ApiModelProperty为int类型时导致控制台打印错误，不影响使用
 #文件地址
 file:
-  path: F:/upload
+  path: /home/djw/files
