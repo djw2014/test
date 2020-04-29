@@ -32,6 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     /**
      * 跨域支持
+     *
      * @param registry
      */
     @Override
@@ -45,6 +46,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     /**
      * 自定义拦截器
+     *
      * @param registry
      */
     @Override
@@ -53,4 +55,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 .excludePathPatterns("/login", "/register");
     }
+
+
 }
